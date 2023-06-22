@@ -1,0 +1,17 @@
+@import '@/style/variable.module.scss';
+
+.appContentHeader {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .headerTitle {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: $text-color;
+  }
+}

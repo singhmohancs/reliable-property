@@ -1,0 +1,102 @@
+.tabs-container {
+  .ant-tabs-card {
+    .ant-tabs-content {
+      margin-top: -16px;
+
+      > .ant-tabs-tabpane {
+        padding: 0;
+        background: $ui-color-6;
+        border: 1px solid $ui-color-4;
+        border-top: none;
+        min-height: 600px;
+      }
+    }
+
+    .ant-tabs-nav-list {
+      border-bottom: 1px solid $ui-color-4;
+
+      .ant-tabs-tab {
+        text-decoration: none;
+        border-top-left-radius: 20px !important;
+        margin-right: 20px !important;
+        position: relative;
+        background: $ui-color-6 !important;
+        min-height: 44px !important;
+        min-width: 130px;
+        border: 1px solid $ui-color-4 !important;
+        border-right: 0px !important;
+        border-bottom: 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after {
+          content: ' ';
+          position: absolute;
+          top: 1px;
+          width: 28px;
+          height: 100%;
+          bottom: 0;
+          transform: skew(30deg);
+          right: -19px;
+          background: $ui-color-6 !important;
+          border-top-right-radius: 10px !important;
+          border-bottom: 1px solid $ui-color-4;
+          z-index: 1;
+          border-right: 1px solid $ui-color-4;
+        }
+
+        .ant-tabs-tab-btn {
+          color: $ui-color-1 !important;
+
+          .tab-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        &.ant-tabs-tab-active {
+          margin-bottom: -1px;
+
+          &:after {
+            border-bottom: none;
+          }
+
+          .ant-tabs-tab-btn {
+            color: $ui-color-0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-tabs-card {
+    &.secondary-tabs {
+      .ant-tabs-nav {
+        border-bottom: 1px solid transparent;
+
+        .ant-tabs-tab {
+          border: 0 none !important;
+
+          &::after,
+          &::before {
+            content: none;
+          }
+
+          .ant-tabs-tab-btn {
+            text-transform: uppercase;
+          }
+
+          &.ant-tabs-tab-active {
+            border-bottom: 2px solid $ui-color-primary !important;
+
+            .ant-tabs-tab-btn {
+              color: #304ffd !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

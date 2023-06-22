@@ -1,0 +1,39 @@
+@mixin scroll {
+  scroll-behavior: auto;
+  margin-right: 5px;
+  margin-top: 5px;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: lightgray;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(9, 30, 66, 0.38);
+  }
+}
+
+@mixin widescrollX {
+  @include scroll;
+  margin: 0;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+  }
+}
+
+@mixin widescrollY {
+  @include scroll;
+  margin: 8px 16px;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+}

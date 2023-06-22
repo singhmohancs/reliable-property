@@ -1,0 +1,176 @@
+@import '@/style/variable.module.scss';
+@import '@/style/mediaQueries.scss';
+
+.app-wrapper {
+  background: $ui-color-5;
+  .ant-layout-header {
+    background-color: $ui-color-6;
+    border-bottom: 1px solid $ui-color-4;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    @include mobile {
+      padding: 0 15px;
+    }
+  }
+
+  .app-content {
+    padding: 30px;
+    @include mobile {
+      padding: 15px;
+    }
+  }
+
+  .content-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.ant-layout-sider {
+  .ant-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &.ant-layout-sider-dark {
+    background: $ui-color-6;
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      padding: 20px 0;
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        img{
+          width: 220px;
+        }
+      }
+      .ant-menu-item {
+        transition: all 0.5s;
+        height: 45px;
+        width: 80%;
+
+        > .anticon {
+          > svg {
+            font-size: 16px;
+            color: $ui-color-0;
+          }
+        }
+
+        > .ant-menu-title-content {
+          font-size: 16px;
+          color: $ui-color-0;
+          margin-left: 15px;
+          line-height: 22.5px;
+        }
+
+        &.ant-menu-item-selected {
+          background-color: $ui-color-16;
+          border-radius: 10px;
+
+          > .ant-menu-title-content {
+            color: $ui-color-6;
+          }
+
+          > .anticon {
+            > svg {
+              color: $ui-color-6;
+            }
+          }
+
+          > .ant-menu-item-icon {
+            color: $ui-color-6;
+          }
+        }
+      }
+    }
+  }
+}
+
+.environment-badge {
+  background-color: $PALETTE_ORANGE;
+  color: $ui-color-6;
+  text-transform: capitalize;
+  text-align: center;
+  visibility: hidden;
+
+  &-show {
+    visibility: visible;
+  }
+
+  &.ant-tag {
+    width: 70px;
+    border-radius: 4px;
+  }
+}
+
+.user-panel-container {
+  .user-details-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: $ui-color-0;
+    .user-permissions {
+      margin-top: 15px;
+      padding: 0 24px;
+      justify-content: center;
+      .ant-tag {
+        background-color: $ui-color-17;
+        color: $ui-color-2;
+        border-radius: 4px;
+      }
+    }
+    .user-name {
+      text-transform: capitalize;
+    }
+    .user-email {
+      color: $ui-color-10;
+      font-size: 12px;
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar {
+    border-radius: 50%;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid $ui-color-3;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: inherit;
+    -webkit-box-shadow: 0 0 15px 0 $ui-color-3;
+    -moz-box-shadow: 0 0 15px 0 $ui-color-3;
+    box-shadow: 0 0 15px 0 $ui-color-3;
+
+    &:hover {
+      background: $ui-color-5;
+    }
+  }
+}
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}

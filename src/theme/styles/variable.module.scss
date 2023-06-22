@@ -1,0 +1,74 @@
+$font-family-poppins: 'Poppins', sans-serif;
+
+$ui-color-0: #3f434a;
+$ui-color-1: #8a9099;
+$ui-color-2: #595f69;
+$ui-color-3: #c6c9cc;
+$ui-color-4: #e8e9eb;
+$ui-color-5: #f8f8f8;
+$ui-color-6: #ffffff;
+$ui-color-7: #333333;
+$ui-color-8: #1e1f2d;
+$ui-color-9: #161625;
+$ui-color-10: #9c9daf;
+$ui-color-11: #304ffd;
+$ui-color-12: #e9f3f5;
+$ui-color-13: #ebebeb;
+$ui-color-14: #00cb6f;
+$ui-color-15: #7388d9;
+$ui-color-16: #000000;
+$ui-color-17: #ebeff2;
+$ui-color-18: #efefef;
+$PALETTE_ORANGE: #ec8337;
+
+$ui-color-primary: $ui-color-15;
+
+$ui-base-font-size: 14px;
+
+/**
+*  Colors
+*/
+$base: #6a717c;
+$green-base: #76b63f;
+$green-light: #80c73c;
+$green-lighter: #c8e1b2;
+$green-dark: #559700;
+$green-darker: #559317;
+$charcoal-base: #414042;
+$charcoal-light: #555356;
+$charcoal-lighter: #55595c;
+$charcoal-dark: #282629;
+
+$grey-base: #e6e6e6;
+$grey-light: #f5f5f5;
+$gray-lighter: #eceeef;
+$grey-dark: #cccccc;
+$grey-dark-2x: #eeeeee;
+$grey-darker: #9099a7;
+$grey-light-2x: #d3dae3;
+$grey-light-3x: #fbfbfc;
+$light:#f6f6f6;
+
+$white: #ffffff;
+
+//others
+$primary-color: $green-dark;
+$secondary-color: #414042;
+$tertiary: #f26523;
+$success: #559700;
+$invalid-back: rgba(230, 81, 75, 0.1);
+$danger-color: $invalid-back;
+$text-color: $base;
+
+$error-color: #dc3545;
+//font family
+
+$font-family-lato: 'Lato', sans-serif;
+$font-family-cinzel: 'Cinzel', serif;
+$font-family-bangers: 'Bangers', cursive;
+
+:export {
+  primaryColor: $primary-color;
+  textColor: $text-color;
+  dangerColor: $danger-color;
+}

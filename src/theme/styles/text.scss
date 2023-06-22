@@ -1,0 +1,25 @@
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 35px);
+}
+
+.text-wrap {
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: calc(100% - 35px);
+}
+
+.text-success {
+  color: $ui-color-14;
+}
+
+.text-error {
+  color: $error-color;
+  padding-left: 10px;
+  padding-top: 5px;
+}

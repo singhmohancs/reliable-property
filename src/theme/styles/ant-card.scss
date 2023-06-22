@@ -1,0 +1,17 @@
+@import '@/style/variable.module.scss';
+
+.ant-card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+
+  .ant-card-head {
+    border-bottom: 0 none;
+  }
+
+  .ant-card-head-title {
+    font-size: 18px;
+    font-family: $font-family-poppins;
+    color: $ui-color-2;
+    font-weight: normal;
+    padding-bottom: 0;
+  }
+}

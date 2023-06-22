@@ -1,0 +1,149 @@
+@import "@/style/variable.module.scss";
+
+.authContainer {
+ background-color: rgb(246 246 246 / 55%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.authContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 20px;
+  background: $white;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.040)!important;
+
+  @media screen and (max-width: 567px) and (min-width: 320px) {
+    max-width: 100%;
+  }
+  .ant-form-item-label {
+    display: flex;
+    font-weight: 500;
+    padding-bottom: 5px;
+    overflow: inherit;
+   
+  }
+  .ant-form-item-required{
+      &:before{
+        position: absolute;
+        right: -11px;
+        margin: 0 !important;
+      }
+  
+     }
+
+  .error {
+    color: $danger-color;
+    text-align: center;
+    padding: 8px;
+    font-size: 11px;
+  }
+}
+.authlink-text {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 8px;
+  }
+}
+.auth_link {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  font-weight: 500;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.forgot-pwd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  a {
+    font-weight: 500;
+  }
+}
+
+.authForm {
+  width: 100%;
+  .ant-form-item {
+    margin-bottom: 0;
+    .ant-form-item-row {
+      height: 100px;
+      flex-direction: row;
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    height: 45px;
+    border-radius: 5px;
+    &:focus {
+        box-shadow: none !important;
+       
+        outline: none !important;
+      }
+    .ant-input {
+      height: 100% !important;
+
+      &:focus {
+        box-shadow: none !important;
+        border: none;
+        border-inline-end-width:0;
+        outline: none !important;
+      }
+    }
+    &:hover {
+      box-shadow: none;
+      border-inline-end-width:0;
+      outline: none;
+    }
+  }
+  .ant-input {
+    border: 1px solid $grey-base;
+    height: 45px !important;
+    border-radius: 5px;
+
+    width: 100%;
+    &:focus {
+      box-shadow: none;
+      border: 1px solid $primary-color;
+      outline: none;
+    }
+    &:hover {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+.authLogo {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+  }
+}
+
+.auth-btn {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.ant-form-item-explain-error {
+  color: $error-color;
+  font-size: 12px;
+  padding-top: 5px;
+}

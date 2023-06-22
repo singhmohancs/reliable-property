@@ -1,0 +1,29 @@
+@import '@/style/variable.module.scss';
+
+.ant-table {
+  .ant-table-thead {
+    > tr {
+      > th {
+        text-transform: uppercase;
+        color: $ui-color-1;
+        background-color: $ui-color-6;
+        font-weight: normal;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .ant-table-cell {
+    .ant-card {
+      box-shadow: none;
+      &:hover {
+        background-color: transparent;
+      }
+      .ant-card-body {
+        padding: 0;
+      }
+    }
+  }
+}

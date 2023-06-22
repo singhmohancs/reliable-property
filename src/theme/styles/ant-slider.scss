@@ -1,0 +1,51 @@
+@import '@/style/variable.module.scss';
+
+.ant-slider {
+  .ant-slider-step,
+  .ant-slider-track,
+  .ant-slider-rail {
+    height: 8px;
+  }
+
+  .ant-slider-rail {
+    background-color: $ui-color-3;
+  }
+
+  .ant-slider-track {
+    background-color: $ui-color-primary;
+  }
+
+  &:hover {
+    .ant-slider-track {
+      background-color: $ui-color-primary;
+    }
+  }
+
+  .ant-slider-handle {
+    &:after {
+      width: 12px;
+      height: 12px;
+      box-shadow: 0 0 0 4px $ui-color-primary !important;
+    }
+
+    &:hover {
+      &:after {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .ant-slider-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .ant-slider-dot-active {
+    border-color: $ui-color-primary !important;
+  }
+
+  .ant-slider-mark {
+    top: 20px;
+  }
+}

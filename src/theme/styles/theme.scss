@@ -1,0 +1,17 @@
+@import '@/style/variable.module.scss';
+@import './layout.scss';
+@import './tabs.scss';
+@import './tags.scss';
+
+@import './ant-table.scss';
+@import './ant-slider.scss';
+@import './ant-button.scss';
+@import './ant-dropdown.scss';
+@import './ant-modal.scss';
+@import './text.scss';
+@import './ant-card.scss';
+@import './auth.scss';
+
+body {
+  font-family: $font-family-poppins !important;
+}
