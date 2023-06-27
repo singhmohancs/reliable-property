@@ -1,0 +1,13 @@
+.loginWrapper {
+	display: flex;
+	height: calc(100vh - 120px);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.loginButton{
+	min-width: 100px;
+}
+.loginForm{
+	width: 100%;
+}
